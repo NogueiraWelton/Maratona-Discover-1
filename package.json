@@ -1,7 +1,7 @@
 {
   "name": "maratona-discover-1",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/main.js",
   "scripts": {
     "start": "webpack --mode development --watch",
     "build": "webpack --mode production"
