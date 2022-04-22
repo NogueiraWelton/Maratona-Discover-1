@@ -17,7 +17,7 @@ Projeto desenvolvido durante a **Maratona Discover 1** da **[Rocketseat](https:/
 git clone https://github.com/NogueiraWelton/maratona-discover-1.git
 
 # Entre no diretório
-cd dev.finances
+cd maratona-discover-1
 ```
 Após disso, utilize uma ferramenta como o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) para criar um servidor local e executar o projeto.
 
