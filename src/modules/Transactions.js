@@ -42,11 +42,13 @@ export default class Transactions {
   }
 
   createTransaction({ description, amount, date, type }, index) {
+    const splittedDate = date.split('-');
+    const formattedDate = `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`;
     const tr = document.createElement('tr');
     tr.innerHTML = Transactions.setTemplate(
       description,
       amount,
-      date,
+      formattedDate,
       type,
       index,
     );
