@@ -1,13 +1,13 @@
 export default class ColorScheme {
   constructor(toggler) {
-    const { mediaText } = window.document.styleSheets[1].cssRules[2].media;
+    const { mediaText } = window.document.styleSheets[1].cssRules[1].media;
     this.mediaText = mediaText;
     this.toggler = document.querySelector(toggler);
     this.toggleTheme = this.toggleTheme.bind(this);
   }
 
   static themeReplace(theme, [arg1, arg2]) {
-    window.document.styleSheets[1].cssRules[2].media.mediaText = theme.replace(
+    window.document.styleSheets[1].cssRules[1].media.mediaText = theme.replace(
       arg1,
       arg2,
     );
@@ -30,7 +30,7 @@ export default class ColorScheme {
   }
 
   reload() {
-    const { mediaText } = window.document.styleSheets[1].cssRules[2].media;
+    const { mediaText } = window.document.styleSheets[1].cssRules[1].media;
     this.mediaText = mediaText;
   }
 

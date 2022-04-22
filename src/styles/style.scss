@@ -6,13 +6,14 @@
   --green:#49aa26;
   --light-green:#3dd705;
   --expense:#e92929;
+  --main-font-color:#363f5f;
+  --main-color: var(--white);
+  --table-color: var(--white);
+  --header-bg-color:#2d4a22;
+  --bg-color: #f0f2f5;
   
   @media (prefers-color-scheme: light) {
-    --main-font-color:#363f5f;
-    --main-color: var(--white);
-    --table-color: var(--white);
-    --header-bg-color:#2d4a22;
-    --bg-color: #f0f2f5;
+
   }
 
   @media (prefers-color-scheme: dark) {
@@ -127,11 +128,10 @@ header {
       height: fit-content;
       grid-area: toggle;
       justify-self: center;
-      background: none;
+      background: transparent;
       border: 2px solid var(--white);
       padding: .25rem;
       border-radius: .25rem;
-      transition: background-color .3s, color .3s;
       cursor: pointer;
 
       @media(min-width: 800px) {
